@@ -1,0 +1,43 @@
+.reset-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reset-form {
+    align-self: center;
+    padding: 0 9px 0 9px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.cancel-button-container,
+.reset-button-container {
+    padding: 3px;
+}
+
+.cancel-button {
+    margin-bottom: 6px;
+}
+
+.cancel-button,
+.reset-button {
+    align-self: center;
+    cursor: pointer;
+}
+
+.invalid {
+    color: red;
+}

@@ -1,0 +1,49 @@
+.header {
+  background-color: #b8d0cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.doctor-info {
+  background-color: #80c2b4;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  background-image: url('../../assets/images/Veljko.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-description {
+  height: 120px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  color: white;
+  font-weight: 700;
+}
+
+.title {
+  color: white;
+}

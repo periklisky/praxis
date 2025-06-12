@@ -1,0 +1,16 @@
+<div class="where-to-find-us">
+  <div class="title">{{ title }}</div>
+
+  <div class="map">
+    <google-map
+      height="250px"
+      width="250px"
+      [center]="location"
+      [zoom]="zoom"
+      (mapClick)="moveMap($event)"
+      (mapMousemove)="move($event)"
+    >
+      <map-marker [position]="{ lat: location.lat, lng: location.lng }" />
+    </google-map>
+  </div>
+</div>

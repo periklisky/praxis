@@ -1,0 +1,33 @@
+{
+    "doctor": {
+        "name": "Veljko Nikolić",
+        "title": "Dr."
+    },
+    "footer": {
+        "info": {}
+    },
+    "form": {
+        "login-header": "Login to make an appointment",
+        "reset-header": "Reset your password",
+        "signup-header": "Sign up to make an appointment",
+        "reset-text": "Enter your email and we'll send you a link to reset your password.",
+        "input-email": "Email:",
+        "input-password": "Password:",
+        "input-firstName": "First name:",
+        "input-lastName": "Last name:",
+        "login-button": "Login",
+        "forgot-text": "Forgot password?",
+        "signup-button": "Create an account",
+        "reset-button": "Send reset link",
+        "cancel-button": "Cancel",
+        "already-have": "Already have an account?"
+    },
+    "invalid": {
+        "email": "Please enter a valid email address.",
+        "firstName-required": "First name is required.",
+        "lastName-required": "El apellido es obligatorio.",
+        "email-required": "El correo electrónico es obligatorio.",
+        "password-required": "La contraseña es obligatoria.",
+        "password-minlength": "Password should be at least 4 characters."
+    }
+}

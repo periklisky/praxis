@@ -1,0 +1,60 @@
+<div class="signup-container">
+    <form [formGroup]="signup">
+        <div class="signup-form">
+            <h3>{{'form.signup-header' | translate }}</h3>
+
+            <div class="data">
+                <div class="firstName">
+                    <label for="firstName">{{'form.input-firstName' | translate }}</label>
+                    <input id="firstName" type="text" formControlName="firstName">
+
+                    <div class="invalid" *ngIf="signup.get('firstName')?.invalid && signup.get('firstName')?.touched">
+                        <small *ngIf="signup.get('firstName')?.errors?.['required']">{{'invalid.firstName-required' |
+                            translate}}</small>
+                    </div>
+                </div>
+
+                <div class="lastName">
+                    <label for="lastName">{{'form.input-lastName' | translate }}</label>
+                    <input id="lastName" type="text" formControlName="lastName">
+
+                    <div class="invalid" *ngIf="signup.get('lastName')?.invalid && signup.get('lastName')?.touched">
+                        <small *ngIf="signup.get('lastName')?.errors?.['required']">{{'invalid.lastName-required' |
+                            translate}}</small>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">{{'form.input-email' | translate }}</label>
+                    <input id="email" type="text" formControlName="email">
+
+                    <div class="invalid" *ngIf="signup.get('email')?.invalid && signup.get('email')?.touched">
+                        <small *ngIf="signup.get('email')?.errors?.['required']">{{'invalid.email-required' |
+                            translate}}</small>
+                        <small *ngIf="signup.get('email')?.errors?.['email']">{{ 'invalid.email' | translate}}</small>
+                    </div>
+                </div>
+
+                <div class="password">
+                    <label for="email">{{'form.input-password' | translate }}</label>
+                    <input id="password" type="text" formControlName="password" />
+
+                    <div class="invalid" *ngIf="signup.get('password')?.invalid && signup.get('password')?.touched">
+                        <small *ngIf="signup.get('password')?.errors?.['required']">{{'invalid.password-required' |
+                            translate}}</small>
+                        <small *ngIf="signup.get('password')?.errors?.['minlength']">Password should be at least 4
+                            characters.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="signup-button-container">
+                    <button class="signup-button" type="submit" (click)="onSignup()">{{'form.signup-button' |
+                        translate}}</button>
+                </div>
+                <div class="login" (click)="onLogin()">{{'form.already-have' | translate}}</div>
+            </div>
+        </div>
+    </form>
+</div>

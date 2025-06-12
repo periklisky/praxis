@@ -1,0 +1,43 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    align-self: center;
+    padding: 0 9px 0 9px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.login-button-container,
+.signup-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.login-forgot {
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.login-button {
+    margin-bottom: 6px;
+}
+
+.login-button,
+.login-forgot,
+.signup-button {
+    align-self: center;
+    cursor: pointer;
+}

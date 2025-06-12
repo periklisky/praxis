@@ -1,0 +1,51 @@
+.languages-container {
+    display: flex;
+    justify-content: end;
+    align-content: stretch;
+    align-items: stretch;
+    background-color: brown;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: yellowgreen;
+    width: 70px;
+}
+
+.en {
+    display: block;
+    background-size: cover;
+    background-image: url('../../assets/images/en-flag.png');
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.sp {
+    display: block;
+    background-size: cover;
+    background-image: url('../../assets/images/sp-flag.png');
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: yellowgreen;
+    width: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

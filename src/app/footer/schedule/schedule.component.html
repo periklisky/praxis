@@ -1,0 +1,9 @@
+<div class="footer-item schedule">
+  <div class="title">{{ title }}</div>
+  <div class="content">
+    <div class="opening-hours" *ngFor="let openingHour of openingHours">
+      <span class="day">{{ openingHour.day }}</span>
+      {{ openingHour.hours.join(", ") }}
+    </div>
+  </div>
+</div>

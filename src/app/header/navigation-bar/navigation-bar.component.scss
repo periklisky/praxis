@@ -1,0 +1,13 @@
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-item {
+  &:hover {
+    color: #2f6e7e;
+    cursor: pointer;
+  }
+}
+

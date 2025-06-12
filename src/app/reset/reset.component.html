@@ -1,0 +1,33 @@
+<div class="reset-container">
+    <form [formGroup]="reset">
+
+        <div class="reset-form">
+            <h3>{{'form.reset-header' | translate}}</h3>
+            <p>{{'form.reset-text' | translate}}</p>
+
+            <div class="user-data">
+                <div class="email">
+                    <label for="email">{{'form.input-email' | translate}}</label>
+                    <input id="email" type="text" formControlName="email">
+
+                    <div class="invalid">
+                        <small *ngIf="reset.get('email')?.touched && reset.get('email')?.invalid">{{'invalid.email' |
+                            translate
+                            }}</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="cancel-button-container">
+                    <button class="cancel-button" (click)="onCancel()">{{'form.cancel-button' | translate }}</button>
+                </div>
+
+                <div class="reset-button-container">
+                    <button class="reset-button" [disabled]="!reset.valid" (click)="onReset()">{{'form.reset-button' |
+                        translate }}</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

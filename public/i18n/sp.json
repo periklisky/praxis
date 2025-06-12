@@ -1,0 +1,33 @@
+{
+    "doctor": {
+        "name": "Veljko Nikolić",
+        "title": "medico"
+    },
+    "footer": {
+        "info": {}
+    },
+    "form": {
+        "login-header": "Inicia sesión para programar una cita",
+        "reset-header": "Restablece tu contraseña",
+        "signup-header": "Regístrese para programar una cita",
+        "reset-text": "Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.",
+        "input-email": "Correo electrónico:",
+        "input-password": "Contraseña:",
+        "input-firstName": "Nombre:",
+        "input-lastName": "Apellido:",
+        "login-button": "Inicia sesión",
+        "forgot-text": "¿Olvidaste tu contraseña?",
+        "signup-button": "Crear cuenta nueva",
+        "reset-button": "Enviar enlace de reinicio",
+        "cancel-button": "Cancelar",
+        "already-have": "¿Ya tienes una cuenta?"
+    },
+    "invalid": {
+        "email": "Por favor introduce un correo electrónico válido.",
+        "firstName-required": "El nombre es obligatorio.",
+        "lastName-required": "El apellido es obligatorio.",
+        "email-required": "El correo electrónico es obligatorio.",
+        "password-required": "La contraseña es obligatoria.",
+        "password-minlength": "La contraseña debe tener al menos 4 caracteres."
+    }
+}

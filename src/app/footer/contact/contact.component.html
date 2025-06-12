@@ -1,0 +1,13 @@
+<div class="footer-item contact">
+  <div class="title">{{ title }}</div>
+  <div class="content">
+    <div class="contact-methods" *ngFor="let contactMethod of contactMethods">
+      {{ contactMethod.type }}: {{ contactMethod.value }}
+    </div>
+  </div>
+</div>
+
+
+<i class="fa-solid fa-phone"></i>       <!-- Telephone -->
+<i class="fa-solid fa-envelope"></i>    <!-- Email -->
+<i class="fa-solid fa-location-dot"></i> <!-- Location -->

@@ -1,0 +1,20 @@
+<div class="praxis">
+  <praxis-header></praxis-header>
+
+  <div class="languages-container">
+    <div class="languages">
+      <div class="en" (click)="onSelectLanguage('en')"></div>
+      <div class="sp" (click)="onSelectLanguage('sp')"></div>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <i class="fa-solid fa-circle-user fa-xl" (click)="onLogin()"></i>
+  </div>
+
+  <praxis-footer></praxis-footer>
+</div>
+
+<!-- <a class="info" #info (click)="jumpTo(info)"></a>
+  <a class="profile" #profile (click)="jumpTo(profile)"></a>
+  <a class="opening-hours" #openingHours (click)="jumpTo(openingHours)"></a> -->
